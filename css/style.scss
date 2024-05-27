@@ -1,0 +1,91 @@
+$primary-color: #ffffff;
+$secondary-color: #5e9188;
+$bacgrund: #253342;
+$font-h-color: #958dadc4;
+$font-stack: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$ancho-base: 600px;
+$margen-lateral: 20px;
+$padding: 50px;
+$colorfondo: #5582b1;
+
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+  }
+
+@mixin justify {
+    text-align: justify;
+    display: block;
+    justify-content: center;
+    justify-self: center;
+}
+@mixin centrar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo{
+    color: $font-h-color;
+    @include centrar();
+}
+.container{
+    @include centrar;
+}
+
+.section{
+    width: $ancho-base - (2 * $margen-lateral);
+    background-color: $secondary-color;
+    @include justify;
+    @include border-radius(5px);
+}
+.article{
+    color: $primary-color;
+    @include justify;
+    @extend .section;
+    background-color: $font-h-color;
+    margin: $padding;
+}
+.main{
+    width: $ancho-base - (2 * $margen-lateral);
+    background-color: $secondary-color;
+    @include justify;
+    @include border-radius(5px);
+}
+body{
+    background-color: $bacgrund;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-right: $margen-lateral;
+  }
+
+  nav ul li a {
+    font-size: 30px;
+    color: $primary-color;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+
+  footer {
+    background-color: $colorfondo;
+    color: $primary-color;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }

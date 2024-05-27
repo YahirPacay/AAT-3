@@ -1,0 +1,65 @@
+.main h3, .section h3 {
+  text-align: center;
+  text-decoration: underline;
+  color: #00b4cc;
+  font-size: 30px;
+}
+.main p, .section p {
+  text-align: center;
+  color: #00dffc;
+  padding: 10px;
+}
+
+.main, .section {
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-raidus: 30px;
+  border-radius: 30px;
+  background: linear-gradient(to top, #343838, #008c9e);
+}
+
+body {
+  background: linear-gradient(to top, #ececec, #343838);
+}
+
+.titulo {
+  text-align: center;
+  color: #ececec;
+}
+
+.section {
+  width: 400px;
+}
+
+.sectiondos {
+  width: 700px;
+  background: linear-gradient(to top, #ececec, #00dffc);
+  color: #343838;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-raidus: 20px;
+  border-radius: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=tres.css.map */

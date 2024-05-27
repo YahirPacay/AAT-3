@@ -1,0 +1,87 @@
+$primary-color: #343838;
+$secondary-color: #005f6b;
+$background: #008c9e;
+$background1: #ececec;
+$font-h-color: #00b4cc;
+$font-hd-color: #00dffc;
+$font-stack: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+
+@mixin border($radio) {
+    -moz-border-radius: $radio;
+    -webkit-border-radius: $radio;
+    -ms-border-radius: $radio;
+    -o-border-raidus: $radio;
+    border-radius: $radio;
+}
+
+@function fondo($color1, $color2) {
+    @return linear-gradient(to top, $color1, $color2);
+}
+
+@function calcular-ancho-total($ancho, $espacio-adicional) {
+    @return $ancho + $espacio-adicional * 2;
+}
+
+.main {
+    h3 {
+        text-align: center;
+        text-decoration: underline;
+        color: $font-h-color;
+        font-size: 30px;
+    }
+
+    p {
+        text-align: center;
+        color: $font-hd-color;
+        padding: 10px
+    }
+}
+
+.main {
+    @include border(30px);
+    
+    background: fondo($primary-color, $background); // Generamos un gradiente de color
+}
+
+body{
+    background: fondo($background1, $primary-color );
+}
+
+.titulo{
+ text-align: center;
+ color: $background1;
+}
+
+.section{
+    @extend .main;
+    width: calcular-ancho-total(200px,100);
+}
+.sectiondos{
+    width: calcular-ancho-total(500px, 100);
+    background: fondo($background1, $font-hd-color );
+    color: $primary-color;
+    @include border(20px);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }

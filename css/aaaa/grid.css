@@ -1,0 +1,180 @@
+body {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+}
+
+div {
+  margin-top: 10px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+
+.grid-1 {
+  grid-template-columns: repeat(1, 100%);
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 50%);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 33.3333333333%);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 25%);
+}
+
+.grid-5 {
+  grid-template-columns: repeat(5, 20%);
+}
+
+.grid-6 {
+  grid-template-columns: repeat(6, 16.6666666667%);
+}
+
+.grid-7 {
+  grid-template-columns: repeat(7, 14.2857142857%);
+}
+
+.grid-8 {
+  grid-template-columns: repeat(8, 12.5%);
+}
+
+.grid-9 {
+  grid-template-columns: repeat(9, 11.1111111111%);
+}
+
+.grid-10 {
+  grid-template-columns: repeat(10, 10%);
+}
+
+.grid-11 {
+  grid-template-columns: repeat(11, 9.0909090909%);
+}
+
+.grid-12 {
+  grid-template-columns: repeat(12, 8.3333333333%);
+}
+
+.elemento-1 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(50, 100, 200);
+  margin-bottom: 10px;
+}
+
+.elemento-2 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(100, 100, 200);
+  margin-bottom: 10px;
+}
+
+.elemento-3 {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(150, 100, 200);
+  margin-bottom: 10px;
+}
+
+.elemento-4 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(200, 100, 200);
+  margin-bottom: 10px;
+}
+
+.elemento-5 {
+  width: 250px;
+  height: 250px;
+  background-color: rgb(250, 100, 200);
+  margin-bottom: 10px;
+}
+
+.caja-red {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.caja-green {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.caja-blue {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.caja-yellow {
+  background-color: yellow;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.caja-orange {
+  background-color: orange;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.barra-50px {
+  width: 50px;
+  height: 30px;
+  background-color: purple;
+  margin-bottom: 10px;
+}
+
+.barra-100px {
+  width: 100px;
+  height: 30px;
+  background-color: purple;
+  margin-bottom: 10px;
+}
+
+.barra-150px {
+  width: 150px;
+  height: 30px;
+  background-color: purple;
+  margin-bottom: 10px;
+}
+
+.barra-200px {
+  width: 200px;
+  height: 30px;
+  background-color: purple;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  font-size: 30px;
+  color: rgb(88, 67, 67);
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=grid.css.map */
